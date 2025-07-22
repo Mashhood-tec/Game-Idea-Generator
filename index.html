@@ -15,6 +15,13 @@
       transform-origin: center;
     }
 
+    /* 📱 On mobile screens (width 768px or smaller), set zoom back to 100% */
+    @media (max-width: 768px) {
+      .zoom-container {
+        transform: scale(1);
+      }
+    }
+
     body {
       background: linear-gradient(to top, rgb(0, 153, 255), cyan);
       font-family: Arial, sans-serif;
